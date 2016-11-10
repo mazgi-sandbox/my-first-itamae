@@ -15,11 +15,11 @@ $ bundle install --path=vendor/bundle
 
 ```
 $ vagrant ssh-config > ssh.config;: ignored
-$ bundle exec itamae ssh --ssh-config=ssh.config --host default dstat.rb
+$ bundle exec itamae ssh --ssh-config=ssh.config --host default recipe/dstat.rb
 ```
 
 ## Inner Vagrant Box
 
 ```
-$ sudo itamae local dstat.rb
+$ sudo itamae local recipe/dstat.rb
 ```
