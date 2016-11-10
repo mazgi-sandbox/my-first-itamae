@@ -1,3 +1,4 @@
 .vagrant/
 share/
 vendor/bundle/
+ssh.config
