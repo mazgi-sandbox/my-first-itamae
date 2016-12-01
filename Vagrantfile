@@ -14,6 +14,10 @@ Vagrant.configure("2") do |config|
     m.vm.box = "cmiles/gentoo-amd64-minimal"
   end
 
+  config.vm.define "centos6" do |m|
+    m.vm.box = "centos/6"
+  end
+
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
