@@ -1,6 +1,5 @@
-GIT
-  remote: git@github.com:mazgi/specinfra.git
-  revision: 2b43ad3bc8cba014e1567d958552c96fb3eb0081
+PATH
+  remote: ~/Creations/mazgi/specinfra
   specs:
     specinfra (2.66.0)
       net-scp
