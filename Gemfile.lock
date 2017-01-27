@@ -13,13 +13,13 @@ GEM
       itamae
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (3.2.0)
+    net-ssh (4.0.1)
     net-telnet (0.1.1)
     schash (0.1.2)
     sfl (2.3)
-    specinfra (2.66.0)
+    specinfra (2.66.6)
       net-scp
-      net-ssh (>= 2.7, < 4.0)
+      net-ssh (>= 2.7, < 5.0)
       net-telnet
       sfl
     thor (0.19.4)
@@ -30,6 +30,7 @@ PLATFORMS
 DEPENDENCIES
   itamae
   itamae-plugin-recipe-mazgi_toilet
+  specinfra
 
 BUNDLED WITH
    1.13.6

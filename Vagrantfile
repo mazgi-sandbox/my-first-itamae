@@ -6,13 +6,17 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
-  # The most common configuration options are documented and commented below.
-  # For a complete reference, please see the online documentation at
-  # https://docs.vagrantup.com.
+  config.vm.define "ubuntu14" do |m|
+    m.vm.box = "ubuntu/trusty64"
+  end
 
-  # Every Vagrant development environment requires a box. You can search for
-  # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.define "gentoo" do |m|
+    m.vm.box = "cmiles/gentoo-amd64-minimal"
+  end
+
+  config.vm.define "centos6" do |m|
+    m.vm.box = "centos/6"
+  end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -45,7 +49,7 @@ Vagrant.configure("2") do |config|
   # Example for VirtualBox:
 
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = 2048
+    vb.memory = 1024
     vb.cpus = 2
     vb.customize [
       "modifyvm", :id,
